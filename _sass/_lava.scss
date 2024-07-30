@@ -1,0 +1,17 @@
+*, *:before, *:after {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  overflow: hidden;
+}
+
+#toggleBlur {
+  position: absolute;
+  top: 1em;
+  right: 1em;
+  z-index: 1;
+  padding: 0.5em;
+  font-size: 1.75em;
+}
