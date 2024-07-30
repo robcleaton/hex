@@ -1,0 +1,32 @@
+// Mobile
+@media only screen and (max-width: 600px) {
+  .menu-desktop {
+    display: none;
+  }
+}
+
+
+// Tablet
+@media only screen and (min-width: 601px) {
+  html {
+    cursor:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='80' height='94' viewport='0 0 100 100' style='fill:black;font-size:47px;'><text y='50%'>🍕</text></svg>") 16 0,auto; /*!emojicursor.app*/
+  }
+  .menu-desktop {
+    display: none;
+  }
+}
+
+// Desktop
+@media only screen and (min-width: 991px) {
+  .navbar-toggler.mobile-menu {
+    display: none;
+  }
+  .menu-desktop {
+    display: block;
+  }
+}
+
+
+// Desktop Large
+@media only screen and (min-width: 1350px) {
+}

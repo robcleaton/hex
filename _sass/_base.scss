@@ -1,4 +1,35 @@
+html, body {
+  margin: 0px;
+  padding: 0px;
+}
+
 body {
   background: #fff;
-  font-family: helvetica, arial;
+  padding-top: 62px;
+}
+nav {
+  background: red;
+}
+header {
+  position: fixed;
+  width: 100%;
+  z-index: 1;
+}
+header .navbar {
+  height: 62px;
+
+  .container-fluid {
+    justify-content: left;
+  }
+}
+.flex-container {
+  display: flex;
+}
+
+.menu-desktop {
+  width: 20%;
+  max-width: 320px;
+  min-width: 200px;
+  background: #eee;
+  height: 100vh;
 }
