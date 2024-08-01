@@ -25,11 +25,16 @@ header .navbar {
     justify-content: left;
   }
 }
+
 .flex-container {
   display: flex;
 }
 .content {
   width: 100%;
+}
+.page.container {
+  padding-top: 80px;
+  padding-bottom: 80px;
 }
 
 .menu-desktop {
