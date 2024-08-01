@@ -28,6 +28,9 @@ header .navbar {
 .flex-container {
   display: flex;
 }
+.content {
+  width: 100%;
+}
 
 .menu-desktop {
   width: 20%;
@@ -35,4 +38,9 @@ header .navbar {
   min-width: 200px;
   background: #eee;
   height: 100vh;
+}
+
+footer {
+  background: #dbdbdd;
+  padding: 80px 0px;
 }
