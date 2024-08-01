@@ -10,6 +10,22 @@ title: Hex
     height: 100vh;
     font-family: 'gabarito';
   }
+  .container {
+    width: 400px;
+  }
+  .content {
+    height: auto;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    text-align: center;
+    width: 100%;
+    display: flex;
+    gap: 16px;
+    align-items: center;
+  }
   a {
     color: #39F492;
   }
@@ -21,27 +37,18 @@ title: Hex
     letter-spacing:-2px;
     color: #39F492;
   }
-  .content {
-    height: auto;
-    margin: 0;
-    position: absolute;
-    top: 50%;
-    -ms-transform: translateY(-50%);
-    transform: translateY(-50%);
-    text-align: center;
-    width: 100%;
-  }
+
   .hex-logo {
     background: url('assets/images/hex.svg')no-repeat;
-    width: 220px;
-    height: 220px;
-    background-size: 220px;
-    margin: auto;
+    width: 180px;
+    height: 180px;
+    background-size: 180px;
   }
 </style>
 
-<div class="content">
-  <div class="hex-logo"></div>
-  <h1 class="display-1">Hex</h1>
-  <a href="matillion-design-system">Matillion Design System</a>
+<div class="container">
+  <div class="content">
+    <div class="hex-logo"></div>
+    <h1 class="display-1">Hex</h1>
+  </div>
 </div>
