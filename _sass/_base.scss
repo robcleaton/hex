@@ -15,6 +15,7 @@ header {
 }
 header .navbar {
   height: 62px;
+  background-color: var(--green-6) !important;
 
   .navbar-brand {
     background: url('../../assets/images/hex.svg')no-repeat center left;
@@ -35,12 +36,12 @@ header .navbar {
 .page.container {
   padding-top: 80px;
   padding-bottom: 80px;
+  height: clamp(400px, 80vh, 100vh);
 }
 
 .menu-desktop {
-  width: 20%;
-  max-width: 320px;
-  min-width: 200px;
+  position: fixed;
+  width: clamp(200px, 320px, 20%);
   background: #eee;
   height: 100vh;
 }
@@ -48,4 +49,5 @@ header .navbar {
 footer {
   background: #dbdbdd;
   padding: 80px 0px;
+  height: clamp(200px, 100%, 400px);
 }

@@ -21,6 +21,9 @@
   .navbar-toggler.mobile-menu {
     display: none;
   }
+  .content {
+    margin-left: clamp(200px, 20%, 320px);
+  }
   .menu-desktop {
     display: block;
   }
