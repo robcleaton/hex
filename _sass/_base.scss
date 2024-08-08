@@ -4,7 +4,6 @@ html, body {
 }
 
 body {
-  background: #fff;
   padding-top: 62px;
 }
 
@@ -36,7 +35,7 @@ header .navbar {
 .page.container {
   padding-top: 80px;
   padding-bottom: 80px;
-  height: clamp(400px, 80vh, 100vh);
+  height: clamp(400px, auto, 100vh);
 }
 
 .menu-desktop {

@@ -1,33 +1,64 @@
-<script>
-  // Colour mode controls
-  const btn = document.querySelector(".btn-toggle");
-  const prefersDarkScheme = window.matchMedia("(prefers-color-scheme: dark)");
+---
+title: Lava
+layout: basic
+permalink: /lava
+---
 
-  const currentTheme = localStorage.getItem("theme");
-  if (currentTheme == "dark") {
-    document.body.classList.toggle("dark-theme");
-  } else if (currentTheme == "light") {
-    document.body.classList.toggle("light-theme");
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>{{ page.title }}</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <!-- Site CSS -->
+    <link rel="stylesheet" href="assets/css/styles.css" type="text/css">
+
+    <!-- Google Gabarito font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&family=Gabarito:wght@400..900&display=swap" rel="stylesheet">
+  </head>
+
+  <body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+
+<style>
+  *, *:before, *:after {
+    margin: 0;
+    padding: 0;
   }
 
-  btn.addEventListener("click", function () {
-    if (prefersDarkScheme.matches) {
-      document.body.classList.toggle("light-theme");
-      var theme = document.body.classList.contains("light-theme")
-        ? "light"
-        : "dark";
-    } else {
-      document.body.classList.toggle("dark-theme");
-      var theme = document.body.classList.contains("dark-theme")
-        ? "dark"
-        : "light";
-    }
-    localStorage.setItem("theme", theme);
-  });
+  body {
+    overflow: hidden;
+  }
 
+  #toggleBlur {
+    position: absolute;
+    top: 1em;
+    right: 1em;
+    z-index: 1;
+    padding: 0.5em;
+    font-size: 0.75em;
+  }
+
+</style>
+
+<!-- pixi inserts itself by default -->
+
+<button id="toggleBlur" data-amount="0">Toggle Orb Blur</button>
+
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+
+
+<script>
   // Create a PixiJS application of type cavas with specify background color and make it resizes to the iframe window
   const app = new PIXI.Application({
-    background: "yellow",
+    background: "#4cc9f0",
     resizeTo: window
   });
 
@@ -148,52 +179,16 @@
       }
     }
   });
+
+  // remove the blur so you can see how the orbs move
+  document.getElementById("toggleBlur").addEventListener("click", (e) => {
+    let currentAmount = blurFilter2.blur;
+    let newAmount = parseInt(e.target.dataset.amount);
+    blurFilter2.blur = newAmount;
+    e.target.dataset.amount = currentAmount;
+  });
+
 </script>
 
-<style>
-  .content {
-   position: absolute;
-   top: 50%;
-   left: 50%;
-   transform: translate(-50%, -50%);
-   padding: 40px;
-  }
-
-
-  body {
-    --text-color: #222;
-    --bkg-color: #fff;
-  }
-  body.dark-theme {
-    --text-color: #eee;
-    --bkg-color: #121212;
-  }
-
-  @media (prefers-color-scheme: dark) {
-    /* defaults to dark theme */
-    body {
-      --text-color: #eee;
-      --bkg-color: #121212;
-    }
-    body.light-theme {
-      --text-color: #222;
-      --bkg-color: #fff;
-    }
-  }
-
-  body, .content {
-    background: var(--bkg-color);
-  }
-
-  h1, p {
-    color: var(--text-color);
-  }
-
-</style>
-
-<div class="content">
-  <button class="btn-toggle">Toggle Dark-Mode</button>
-  <h1>Hey there! This is just a title</h2>
-    <p>I am just a boring text, existing here solely for the purpose of this demo</p>
-    <p>And I am just another one like the one above me, because two is better than having only one</p>
-</div>
+</body>
+</html>
