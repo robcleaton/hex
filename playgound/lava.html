@@ -24,17 +24,30 @@ permalink: /lava
     font-size: 0.75em;
   }
 
+  .content {
+    position: absolute;
+     top: 50%;
+     left: 50%;
+     transform: translate(-50%, -50%);
+     padding: 40px;
+     width: auto;
+     margin-left: auto;
+  }
+
 </style>
 
-<!-- pixi inserts itself by default -->
-<button id="toggleBlur" data-amount="0">Toggle Orb Blur</button>
+<div class="content">
+  <h1>Hey there! This is just a title</h2>
+    <p>I am just a boring text, existing here solely for the purpose of this demo</p>
+    <p>And I am just another one like the one above me, because two is better than having only one</p>
+</div>
 
 
 <!-- Lava JS -->
   <script>
     // Create a PixiJS application of type cavas with specify background color and make it resizes to the iframe window
     const app = new PIXI.Application({
-      background: "#4cc9f0",
+      background: "#19E57F",
       resizeTo: window
     });
 
@@ -50,7 +63,7 @@ permalink: /lava
     app.stage.addChild(container);
 
     // Make a nice color pallete for our random orbs
-    const colors = ["0x4361ee", "0x3a0ca3", "0x7209b7", "0xf72585"];
+    const colors = ["0x0C643D", "0x01A754", "0x19E57F", "0x96FCC7"];
     const blurFilter2 = new PIXI.BlurFilter();
 
     // Helper Functions
