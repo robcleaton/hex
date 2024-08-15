@@ -17,6 +17,9 @@
   .menu-desktop {
     display: none;
   }
+  p {
+    max-width: 88%;
+  }
 }
 
 // Desktop
@@ -29,6 +32,9 @@
   }
   .menu-desktop {
     display: block;
+  }
+  p {
+    max-width: 70%;
   }
 }
 
