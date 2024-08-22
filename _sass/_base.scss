@@ -25,6 +25,9 @@ header .navbar {
     justify-content: left;
   }
 }
+.intro {
+  display: none;
+}
 
 .flex-container {
   display: flex;
@@ -33,7 +36,6 @@ header .navbar {
   width: 100%;
 }
 .page.container {
-  padding-top: 80px;
   padding-bottom: 80px;
   height: clamp(400px, auto, 100vh);
 }
