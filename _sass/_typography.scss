@@ -6,9 +6,24 @@ h1 {
 }
 p {
   font-size: 16px;
+  line-height: 28px;
   color: var(--hexGlobalGrey7);
 }
 p.lead {
   font-size: 20px;
   color: var(--hexGlobalGrey9);
+}
+a {
+  color: var(--hexGlobalGreen9);
+}
+a:hover, .btn-link:hover, .btn-link:focus {
+  color: var(--hexGlobalGreen9);
+  text-decoration: none;
+}
+
+.btn-link {
+  color: var(--hexGlobalGreen9);
+  text-decoration: none;
+  padding: 8px 0px 0px 0px;
+  font-size: 20px;
 }
