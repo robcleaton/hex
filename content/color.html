@@ -3,3 +3,474 @@ layout: default
 title: Color
 permalink: /color
 ---
+<style>
+  .color-block {
+    background: green;
+    padding: 40px 12px 12px 12px;
+    p {
+      margin: 0px;
+    }
+    p.light {
+      color: var(--hexGlobalGrey1);
+    }
+    p.dark {
+      color: var(--hexGlobalGray9);
+    }
+  }
+
+  .green-1 {
+    background: var(--hexGlobalGreen1);
+  }
+  .green-2 {
+    background: var(--hexGlobalGreen2);
+  }
+  .green-3 {
+    background: var(--hexGlobalGreen3);
+  }
+  .green-4 {
+    background: var(--hexGlobalGreen4);
+  }
+  .green-5 {
+    background: var(--hexGlobalGreen5);
+  }
+  .green-6 {
+    background: var(--hexGlobalGreen6);
+  }
+  .green-7 {
+    background: var(--hexGlobalGreen7);
+  }
+  .green-8 {
+    background: var(--hexGlobalGreen8);
+  }
+  .green-9 {
+    background: var(--hexGlobalGreen9);
+  }
+  .green-10 {
+    background: var(--hexGlobalGreen10);
+  }
+
+  .blue-1 {
+    background: var(--hexGlobalBlue1);
+  }
+  .blue-2 {
+    background: var(--hexGlobalBlue2);
+  }
+  .blue-3 {
+    background: var(--hexGlobalBlue3);
+  }
+  .blue-4 {
+    background: var(--hexGlobalBlue4);
+  }
+  .blue-5 {
+    background: var(--hexGlobalBlue5);
+  }
+  .blue-6 {
+    background: var(--hexGlobalBlue6);
+  }
+  .blue-7 {
+    background: var(--hexGlobalBlue7);
+  }
+  .blue-8 {
+    background: var(--hexGlobalBlue8);
+  }
+  .blue-9 {
+    background: var(--hexGlobalBlue9);
+  }
+  .blue-10 {
+    background: var(--hexGlobalBlue10);
+  }
+
+  .grey-1 {
+    background: var(--hexGlobalGrey1);
+  }
+  .grey-2 {
+    background: var(--hexGlobalGrey2);
+  }
+  .grey-3 {
+    background: var(--hexGlobalGrey3);
+  }
+  .grey-4 {
+    background: var(--hexGlobalGrey4);
+  }
+  .grey-5 {
+    background: var(--hexGlobalGrey5);
+  }
+  .grey-6 {
+    background: var(--hexGlobalGrey6);
+  }
+  .grey-7 {
+    background: var(--hexGlobalGrey7);
+  }
+  .grey-8 {
+    background: var(--hexGlobalGrey8);
+  }
+  .grey-9 {
+    background: var(--hexGlobalGrey9);
+  }
+  .grey-10 {
+    background: var(--hexGlobalGrey10);
+  }
+
+  .ruby-1 {
+    background: var(--hexGlobalRuby1);
+  }
+  .ruby-2 {
+    background: var(--hexGlobalRuby2);
+  }
+  .ruby-3 {
+    background: var(--hexGlobalRuby3);
+  }
+  .ruby-4 {
+    background: var(--hexGlobalRuby4);
+  }
+  .ruby-5 {
+    background: var(--hexGlobalRuby5);
+  }
+  .ruby-6 {
+    background: var(--hexGlobalRuby6);
+  }
+  .ruby-7 {
+    background: var(--hexGlobalRuby7);
+  }
+  .ruby-8 {
+    background: var(--hexGlobalRuby8);
+  }
+  .ruby-9 {
+    background: var(--hexGlobalRuby9);
+  }
+  .ruby-10 {
+    background: var(--hexGlobalRuby10);
+  }
+
+  .mint-1 {
+    background: var(--hexGlobalMint1);
+  }
+  .mint-2 {
+    background: var(--hexGlobalMint2);
+  }
+  .mint-3 {
+    background: var(--hexGlobalMint3);
+  }
+  .mint-4 {
+    background: var(--hexGlobalMint4);
+  }
+  .mint-5 {
+    background: var(--hexGlobalMint5);
+  }
+  .mint-6 {
+    background: var(--hexGlobalMint6);
+  }
+  .mint-7 {
+    background: var(--hexGlobalMint7);
+  }
+  .mint-8 {
+    background: var(--hexGlobalMint8);
+  }
+  .mint-9 {
+    background: var(--hexGlobalMint9);
+  }
+  .mint-10 {
+    background: var(--hexGlobalMint10);
+  }
+
+  .yellowstone-1 {
+    background: var(--hexGlobalYellowstone1);
+  }
+  .yellowstone-2 {
+    background: var(--hexGlobalYellowstone2);
+  }
+  .yellowstone-3 {
+    background: var(--hexGlobalYellowstone3);
+  }
+  .yellowstone-4 {
+    background: var(--hexGlobalYellowstone4);
+  }
+  .yellowstone-5 {
+    background: var(--hexGlobalYellowstone5);
+  }
+  .yellowstone-6 {
+    background: var(--hexGlobalYellowstone6);
+  }
+  .yellowstone-7 {
+    background: var(--hexGlobalYellowstone7);
+  }
+  .yellowstone-8 {
+    background: var(--hexGlobalYellowstone8);
+  }
+  .yellowstone-9 {
+    background: var(--hexGlobalYellowstone9);
+  }
+  .yellowstone-10 {
+    background: var(--hexGlobalYellowstone10);
+  }
+
+  .electric-1 {
+    background: var(--hexGlobalElectirc1);
+  }
+  .electric-2 {
+    background: var(--hexGlobalElectirc2);
+  }
+  .electric-3 {
+    background: var(--hexGlobalElectirc3);
+  }
+  .electric-4 {
+    background: var(--hexGlobalElectirc4);
+  }
+  .electric-5 {
+    background: var(--hexGlobalElectirc5);
+  }
+  .electric-6 {
+    background: var(--hexGlobalElectirc6);
+  }
+  .electric-7 {
+    background: var(--hexGlobalElectirc7);
+  }
+  .electric-8 {
+    background: var(--hexGlobalElectirc8);
+  }
+  .electric-9 {
+    background: var(--hexGlobalElectirc9);
+  }
+  .electric-10 {
+    background: var(--hexGlobalElectirc10);
+  }
+</style>
+
+<div class="container">
+  <h4>Blue</h4>
+  <div class="color-block blue-1">
+    <p class="dark"><b>Blue 1</b> – #000000<span class="badge text-bg-secondary">{Token Name}</span></p>
+  </div>
+  <div class="color-block blue-2">
+    <p class="dark"><b>Blue 2</b> – #000000<span class="badge text-bg-secondary">{Token Name}</span></p>
+  </div>
+  <div class="color-block blue-3">
+    <p class="dark"><b>Blue 3</b> – #000000<span class="badge text-bg-secondary">{Token Name}</span></p>
+  </div>
+  <div class="color-block blue-4">
+    <p class="dark"><b>Blue 4</b> – #000000<span class="badge text-bg-secondary">{Token Name}</span></p>
+  </div>
+  <div class="color-block blue-5">
+    <p class="dark"><b>Blue 5</b> – #000000<span class="badge text-bg-secondary">{Token Name}</span></p>
+  </div>
+  <div class="color-block blue-6">
+    <p class="light"><b>Blue 6</b> – #000000<span class="badge text-bg-secondary">{Token Name}</span></p>
+  </div>
+  <div class="color-block blue-7">
+    <p class="light"><b>Blue 7</b> – #000000<span class="badge text-bg-secondary">{Token Name}</span></p>
+  </div>
+  <div class="color-block blue-8">
+    <p class="light"><b>Blue 8</b> – #000000<span class="badge text-bg-secondary">{Token Name}</span></p>
+  </div>
+  <div class="color-block blue-9">
+    <p class="light"><b>Blue 9</b> – #000000<span class="badge text-bg-secondary">{Token Name}</span></p>
+  </div>
+  <div class="color-block blue-10">
+    <p class="light"><b>Blue 10</b> – #000000<span class="badge text-bg-secondary">{Token Name}</span></p>
+  </div>
+</div>
+
+<div class="container">
+  <h4>Green</h4>
+  <div class="color-block green-1">
+    <p class="dark"><b>Green 1</b> – #000000<span class="badge text-bg-secondary">{Token Name}</span></p>
+  </div>
+  <div class="color-block green-2">
+    <p class="dark"><b>Green 2</b> – #000000<span class="badge text-bg-secondary">{Token Name}</span></p>
+  </div>
+  <div class="color-block green-3">
+    <p class="dark"><b>Green 3</b> – #000000<span class="badge text-bg-secondary">{Token Name}</span></p>
+  </div>
+  <div class="color-block green-4">
+    <p class="dark"><b>Green 4</b> – #000000<span class="badge text-bg-secondary">{Token Name}</span></p>
+  </div>
+  <div class="color-block green-5">
+    <p class="dark"><b>Green 5</b> – #000000<span class="badge text-bg-secondary">{Token Name}</span></p>
+  </div>
+  <div class="color-block green-6">
+    <p class="dark"><b>Green 6</b> – #000000<span class="badge text-bg-secondary">{Token Name}</span></p>
+  </div>
+  <div class="color-block green-7">
+    <p class="dark"><b>Green 7</b> – #000000<span class="badge text-bg-secondary">{Token Name}</span></p>
+  </div>
+  <div class="color-block green-8">
+    <p class="dark"><b>Green 8</b> – #000000<span class="badge text-bg-secondary">{Token Name}</span></p>
+  </div>
+  <div class="color-block green-9">
+    <p class="light"><b>Green 9</b> – #000000<span class="badge text-bg-secondary">{Token Name}</span></p>
+  </div>
+  <div class="color-block green-10">
+    <p class="light"><b>Green 10</b> – #000000<span class="badge text-bg-secondary">{Token Name}</span></p>
+  </div>
+</div>
+
+
+<div class="container">
+  <h4>Grey</h4>
+  <div class="color-block grey-1">
+    <p class="dark"><b>Grey 1</b> – #000000<span class="badge text-bg-secondary">{Token Name}</span></p>
+  </div>
+  <div class="color-block grey-2">
+    <p class="dark"><b>Grey 2</b> – #000000<span class="badge text-bg-secondary">{Token Name}</span></p>
+  </div>
+  <div class="color-block grey-3">
+    <p class="dark"><b>Grey 3</b> – #000000<span class="badge text-bg-secondary">{Token Name}</span></p>
+  </div>
+  <div class="color-block grey-4">
+    <p class="dark"><b>Grey 4</b> – #000000<span class="badge text-bg-secondary">{Token Name}</span></p>
+  </div>
+  <div class="color-block grey-5">
+    <p class="dark"><b>Grey 5</b> – #000000<span class="badge text-bg-secondary">{Token Name}</span></p>
+  </div>
+  <div class="color-block grey-6">
+    <p class="light"><b>Grey 6</b> – #000000<span class="badge text-bg-secondary">{Token Name}</span></p>
+  </div>
+  <div class="color-block grey-7">
+    <p class="light"><b>Grey 7</b> – #000000<span class="badge text-bg-secondary">{Token Name}</span></p>
+  </div>
+  <div class="color-block grey-8">
+    <p class="light"><b>Grey 8</b> – #000000<span class="badge text-bg-secondary">{Token Name}</span></p>
+  </div>
+  <div class="color-block grey-9">
+    <p class="light"><b>Grey 9</b> – #000000<span class="badge text-bg-secondary">{Token Name}</span></p>
+  </div>
+  <div class="color-block grey-10">
+    <p class="light"><b>Grey 10</b> – #000000<span class="badge text-bg-secondary">{Token Name}</span></p>
+  </div>
+</div>
+
+<div class="container">
+  <h4>Ruby</h4>
+  <div class="color-block ruby-1">
+    <p class="dark"><b>Ruby 1</b> – #000000<span class="badge text-bg-secondary">{Token Name}</span></p>
+  </div>
+  <div class="color-block ruby-2">
+    <p class="dark"><b>Ruby 2</b> – #000000<span class="badge text-bg-secondary">{Token Name}</span></p>
+  </div>
+  <div class="color-block ruby-3">
+    <p class="dark"><b>Ruby 3</b> – #000000<span class="badge text-bg-secondary">{Token Name}</span></p>
+  </div>
+  <div class="color-block ruby-4">
+    <p class="dark"><b>Ruby 4</b> – #000000<span class="badge text-bg-secondary">{Token Name}</span></p>
+  </div>
+  <div class="color-block ruby-5">
+    <p class="dark"><b>Ruby 5</b> – #000000<span class="badge text-bg-secondary">{Token Name}</span></p>
+  </div>
+  <div class="color-block ruby-6">
+    <p class="dark"><b>Ruby 6</b> – #000000<span class="badge text-bg-secondary">{Token Name}</span></p>
+  </div>
+  <div class="color-block ruby-7">
+    <p class="light"><b>Ruby 7</b> – #000000<span class="badge text-bg-secondary">{Token Name}</span></p>
+  </div>
+  <div class="color-block ruby-8">
+    <p class="light"><b>Ruby 8</b> – #000000<span class="badge text-bg-secondary">{Token Name}</span></p>
+  </div>
+  <div class="color-block ruby-9">
+    <p class="light"><b>Ruby 9</b> – #000000<span class="badge text-bg-secondary">{Token Name}</span></p>
+  </div>
+  <div class="color-block ruby-10">
+    <p class="light"><b>Ruby 10</b> – #000000<span class="badge text-bg-secondary">{Token Name}</span></p>
+  </div>
+</div>
+
+<div class="container">
+  <h4>Mint</h4>
+  <div class="color-block mint-1">
+    <p class="dark"><b>Mint 1</b> – #000000<span class="badge text-bg-secondary">{Token Name}</span></p>
+  </div>
+  <div class="color-block mint-2">
+    <p class="dark"><b>Mint 2</b> – #000000<span class="badge text-bg-secondary">{Token Name}</span></p>
+  </div>
+  <div class="color-block mint-3">
+    <p class="dark"><b>Mint 3</b> – #000000<span class="badge text-bg-secondary">{Token Name}</span></p>
+  </div>
+  <div class="color-block mint-4">
+    <p class="dark"><b>Mint 4</b> – #000000<span class="badge text-bg-secondary">{Token Name}</span></p>
+  </div>
+  <div class="color-block mint-5">
+    <p class="dark"><b>Mint 5</b> – #000000<span class="badge text-bg-secondary">{Token Name}</span></p>
+  </div>
+  <div class="color-block mint-6">
+    <p class="dark"><b>Mint 6</b> – #000000<span class="badge text-bg-secondary">{Token Name}</span></p>
+  </div>
+  <div class="color-block mint-7">
+    <p class="dark"><b>Mint 7</b> – #000000<span class="badge text-bg-secondary">{Token Name}</span></p>
+  </div>
+  <div class="color-block mint-8">
+    <p class="dark"><b>Mint 8</b> – #000000<span class="badge text-bg-secondary">{Token Name}</span></p>
+  </div>
+  <div class="color-block mint-9">
+    <p class="dark"><b>Mint 9</b> – #000000<span class="badge text-bg-secondary">{Token Name}</span></p>
+  </div>
+  <div class="color-block mint-10">
+    <p class="light"><b>Mint 10</b> – #000000<span class="badge text-bg-secondary">{Token Name}</span></p>
+  </div>
+</div>
+
+<div class="container">
+  <h4>Yellowstone</h4>
+  <div class="color-block yellowstone-1">
+    <p class="dark"><b>Yellowstone 1</b> – #000000<span class="badge text-bg-secondary">{Token Name}</span></p>
+  </div>
+  <div class="color-block yellowstone-2">
+    <p class="dark"><b>Yellowstone 2</b> – #000000<span class="badge text-bg-secondary">{Token Name}</span></p>
+  </div>
+  <div class="color-block yellowstone-3">
+    <p class="dark"><b>Yellowstone 3</b> – #000000<span class="badge text-bg-secondary">{Token Name}</span></p>
+  </div>
+  <div class="color-block yellowstone-4">
+    <p class="dark"><b>Yellowstone 4</b> – #000000<span class="badge text-bg-secondary">{Token Name}</span></p>
+  </div>
+  <div class="color-block yellowstone-5">
+    <p class="dark"><b>Yellowstone 5</b> – #000000<span class="badge text-bg-secondary">{Token Name}</span></p>
+  </div>
+  <div class="color-block yellowstone-6">
+    <p class="dark"><b>Yellowstone 6</b> – #000000<span class="badge text-bg-secondary">{Token Name}</span></p>
+  </div>
+  <div class="color-block yellowstone-7">
+    <p class="dark"><b>Yellowstone 7</b> – #000000<span class="badge text-bg-secondary">{Token Name}</span></p>
+  </div>
+  <div class="color-block yellowstone-8">
+    <p class="dark"><b>Yellowstone 8</b> – #000000<span class="badge text-bg-secondary">{Token Name}</span></p>
+  </div>
+  <div class="color-block yellowstone-9">
+    <p class="light"><b>Yellowstone 9</b> – #000000<span class="badge text-bg-secondary">{Token Name}</span></p>
+  </div>
+  <div class="color-block yellowstone-10">
+    <p class="light"><b>Yellowstone 10</b> – #000000<span class="badge text-bg-secondary">{Token Name}</span></p>
+  </div>
+</div>
+
+<div class="container">
+  <h4>Electric</h4>
+  <div class="color-block electric-1">
+    <p class="dark"><b>Electric 1</b> – #000000<span class="badge text-bg-secondary">{Token Name}</span></p>
+  </div>
+  <div class="color-block electric-2">
+    <p class="dark"><b>Electric 2</b> – #000000<span class="badge text-bg-secondary">{Token Name}</span></p>
+  </div>
+  <div class="color-block electric-3">
+    <p class="dark"><b>Electric 3</b> – #000000<span class="badge text-bg-secondary">{Token Name}</span></p>
+  </div>
+  <div class="color-block electric-4">
+    <p class="dark"><b>Electric 4</b> – #000000<span class="badge text-bg-secondary">{Token Name}</span></p>
+  </div>
+  <div class="color-block electric-5">
+    <p class="light"><b>Electric 5</b> – #000000<span class="badge text-bg-secondary">{Token Name}</span></p>
+  </div>
+  <div class="color-block electric-6">
+    <p class="light"><b>Electric 6</b> – #000000<span class="badge text-bg-secondary">{Token Name}</span></p>
+  </div>
+  <div class="color-block electric-7">
+    <p class="light"><b>Electric 7</b> – #000000<span class="badge text-bg-secondary">{Token Name}</span></p>
+  </div>
+  <div class="color-block electric-8">
+    <p class="light"><b>Electric 8</b> – #000000<span class="badge text-bg-secondary">{Token Name}</span></p>
+  </div>
+  <div class="color-block electric-9">
+    <p class="light"><b>Electric 9</b> – #000000<span class="badge text-bg-secondary">{Token Name}</span></p>
+  </div>
+  <div class="color-block electric-10">
+    <p class="light"><b>Electric 10</b> – #000000<span class="badge text-bg-secondary">{Token Name}</span></p>
+  </div>
+</div>

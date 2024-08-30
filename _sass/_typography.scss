@@ -1,14 +1,14 @@
 body {
-  font-family: 'gabarito', helvetica;
+  font-family: var(--hexGlobalBrand), helvetica;
 }
 h1 {
   margin: 0px;
 }
 p {
   font-size: 16px;
-  color: var(--grey-7);
+  color: var(--hexGlobalGrey7);
 }
 p.lead {
   font-size: 20px;
-  color: var(--grey-9);
+  color: var(--hexGlobalGrey9);
 }
