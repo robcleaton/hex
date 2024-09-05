@@ -38,6 +38,9 @@ header .navbar {
 .page.container {
   padding-bottom: 80px;
   height: clamp(400px, auto, 100vh);
+  display: flex;
+  flex-direction: column;
+  gap: 80px;
 }
 
 .menu-desktop {
