@@ -3,6 +3,53 @@ layout: default
 title: Typography
 permalink: /typography
 ---
+<style>
+h1 {
+  font-size: 40px;
+  color: var(--hexGlobalGrey9);
+  font-weight: 500;
+}
+h2 {
+  font-size: 32px;
+  color: var(--hexGlobalGrey8);
+  font-weight: 500;
+}
+h3 {
+  font-size: 28px;
+  color: var(--hexGlobalGrey8);
+  font-weight: 500;
+}
+h4 {
+  font-size: 24px;
+  color: var(--hexGlobalGrey8);
+  font-weight: 100;
+}
+h5 {
+  font-size: 20px;
+  font-weight: 100;
+  color: var(--hexGlobalGrey8);
+}
+h6 {
+  font-size: 16px;
+  font-weight: 100;
+  color: var(--hexGlobalGrey7);
+}
+.font-weight-100 {
+  font-weight: 100 !important;
+}
+.font-weight-400 {
+  font-weight: 400 !important;
+}
+.font-weight-500 {
+  font-weight: 500 !important;
+}
+.font-weight-600 {
+  font-weight: 600 !important;
+}
+.font-weight-700 {
+  font-weight: 700 !important;
+}
+</style>
 
 <div class="container">
   <h1 class="display-1">Display 1</h1>
@@ -11,14 +58,28 @@ permalink: /typography
   <h1 class="display-4">Display 4</h1>
   <h1 class="display-5">Display 5</h1>
   <h1 class="display-6">Display 6</h1>
+</div>
 
-  <h1>h1. Bootstrap heading</h1>
-  <h2>h2. Bootstrap heading</h2>
-  <h3>h3. Bootstrap heading</h3>
-  <h4>h4. Bootstrap heading</h4>
-  <h5>h5. Bootstrap heading</h5>
-  <h6>h6. Bootstrap heading</h6>
 
+<div class="container">
+  <h1>h1. Bootstrap heading – Gabrito Medium, 40px, grey 9</h1>
+  <h2>h2. Bootstrap heading – Gabrito Medium, 32px, grey 8</h2>
+  <h3>h3. Bootstrap heading – Gabrito Medium, 28px, grey 8</h3>
+  <h4>h4. Bootstrap heading – Gabrito Medium, 24px, grey 8</h4>
+  <h5>h5. Bootstrap heading – Gabrito Regular, 20px, grey 8</h5>
+  <h6>h6. Bootstrap heading – Gabrito Regular, 16px, grey 7</h6>
+</div>
+
+<div class="container">
+  <h1 class="font-weight-100">Gabarito</h1>
+  <h2 class="font-weight-100">Gabarito Regular</h2>
+  <h2 class="font-weight-500">Gabarito Medium</h2>
+  <h2 class="font-weight-600">Gabarito SemiBold</h2>
+  <h2 class="font-weight-700">Gabarito Bold</h2>
+</div>
+
+
+<div class="container">
   <p>You can use the mark tag to <mark>highlight</mark> text.</p>
   <p><del>This line of text is meant to be treated as deleted text.</del></p>
   <p><s>This line of text is meant to be treated as no longer accurate.</s></p>
@@ -27,7 +88,10 @@ permalink: /typography
   <p><small>This line of text is meant to be treated as fine print.</small></p>
   <p><strong>This line rendered as bold text.</strong></p>
   <p><em>This line rendered as italicized text.</em></p>
+</div>
 
+
+<div class="container">
   <blockquote class="blockquote">
     <p>A well-known quote, contained in a blockquote element.</p>
   </blockquote>
@@ -45,12 +109,12 @@ permalink: /typography
 <div class="container">
   <div>
     <p class="lead">
-      This is a lead paragraph. It stands out from regular paragraphs. Lorem ipsum dolor sit amet, consectetur adipiscing elit. In malesuada sem non orci facilisis, id rhoncus massa mollis.
-      <button type="button" class="btn btn-link" href="#">Standalone link</button>
+      This is a lead paragraph, Gabarito Regular, 20px. It stands out from regular paragraphs. Lorem ipsum dolor sit amet, consectetur adipiscing elit. In malesuada sem non orci facilisis, id rhoncus massa mollis.
+      <button type="button" class="btn btn-link" href="#">Standalone link – 20px</button>
     </p>
   </div>
 
-  <p>Body copy line length to not be more than 14 words wide and support. Lorem ipsum odor amet, consectetuer adipiscing elit. Fames tincidunt adipiscing eros gravida sit luctus facilisis auctor. Interdum class maecenas, rutrum senectus finibus vehicula pulvinar venenatis at. Purus odio quisque ornare conubia lorem gravida aliquet sollicitudin. Vivamus molestie pellentesque; nam luctus tempus ex dolor et. Eros fermentum ut proin viverra duis duis tincidunt. Penatibus fusce libero dui porta semper facilisis lorem dictum.</p>
+  <p>Body copy, 16px, grey 6. Line length to not be more than 14 words wide and support. Lorem ipsum odor amet, consectetuer adipiscing elit. Fames tincidunt adipiscing eros gravida sit luctus facilisis auctor. Interdum class maecenas, rutrum senectus finibus vehicula pulvinar venenatis at. Purus odio quisque ornare conubia lorem gravida aliquet sollicitudin. Vivamus molestie pellentesque; nam luctus tempus ex dolor et. Eros fermentum ut proin viverra duis duis tincidunt. Penatibus fusce libero dui porta semper facilisis lorem dictum.</p>
 
   <p>Est mus elit aenean est torquent eu enim <a href="#">Text link</a>. Maecenas ex eleifend finibus tortor ex rutrum fermentum. Dignissim et placerat felis inceptos tempor. Ultrices ridiculus class laoreet; varius netus donec primis. Mi congue vestibulum tortor ac semper class orci efficitur. Nisi leo tortor in vehicula blandit nulla; ac ultricies. Hendrerit nisi nunc et mus metus in dapibus. Volutpat litora tortor magna rutrum a parturient natoque morbi. Nisl ante ultrices viverra, integer ex tempor eleifend. Odio tortor egestas porttitor erat diam; magnis nec interdum convallis?</p>
 
